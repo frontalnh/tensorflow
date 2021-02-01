@@ -1,7 +1,8 @@
 import tensorflow as tf
 import numpy as np
 
-xy = np.loadtxt('./data/scores.csv', delimiter=',', dtype=np.float)
+xy = np.loadtxt('./linear_regression/data/scores.csv',
+                delimiter=',', dtype=np.float)
 x_data = xy[:, 0:-1]
 y_data = xy[:, [-1]]
 
